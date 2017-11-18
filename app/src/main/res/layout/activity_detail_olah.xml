@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context="sttg.inf.utskelas2.DetailOlahActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Olahraga yang dipilih: " />
+
+    <TextView
+        android:id="@+id/text_olahraga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---" />
+
+    <TextView
+        android:id="@+id/text_waktu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waktu olahraga (jam)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@mipmap/ic_minus" />
+
+        <TextView
+            android:id="@+id/counter_waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:textSize="16pt"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@mipmap/ic_add" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_lakukan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lakukan Olahraga"/>
+</LinearLayout>
